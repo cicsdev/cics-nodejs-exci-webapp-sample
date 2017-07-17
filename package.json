@@ -1,0 +1,22 @@
+{
+  "name": "cics_nodejs_exci_webapp_sample",
+  "version": "0.1.0",
+  "description": "Sample application that uses the CICS Node.js module to contact CICS over the External CICS Interface (EXCI)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markjhollands/cics-nodejs-exci-webapp-sample.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "dotenv": "latest",
+    "angular": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest"
+  }
+}

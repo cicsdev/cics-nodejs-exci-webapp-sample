@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- Licensed Materials - Property of IBM                             -->
+<!--                                                                  -->
+<!-- SAMPLE                                                           -->
+<!--                                                                  -->
+<!-- (c) Copyright IBM Corp. 2017 All Rights Reserved                 -->
+<!--                                                                  -->
+<!-- US Government Users Restricted Rights - Use, duplication or      -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp -->
+<html>
+<head>
+    <title>Hello AngularJS</title>
+    <script src="angular/angular.min.js"></script>
+    <script src="hello.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body ng-app="firstApp">
+    <div ng-controller="Hello">
+        <br>
+        <div class="container">
+          <div class="header clearfix">
+            <nav>
+              <ul class="nav nav-pills pull-right">
+                <li role="presentation"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">About</a></li>
+                <li role="presentation"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Node.js on z/OS</h3>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 center">
+          <img src="img/cics.png" style="width:30em">
+          <h2>Node.js with CICS application</h2>
+          <p>This demo application is using IBM SDK for Node.js for z/OS. It uses the Angular.js, Express.js and cics-exci packages to create an end-to-end Node.js application. Want to see more? Find the code here</p>
+          <br><br>
+        </div>
+
+
+
+        <div class="col-lg-4 col-lg-offset-4 center">
+            <input type="text" ng-model="string.input"  class="form-control" placeholder="Text here" >
+            <br>
+            <button class="btn btn-md btn-primary"  ng-click="elliebutton();">Click to reverse</button>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <p>Original: {{string.input}}</p>
+            <p>Reversed: {{string.reversed}}</p>
+        </div>
+
+
+    </div>
+<!--
+    <footer class="footer">
+        <hr>
+        <p>© 2017 IBM</p>
+    </footer> -->
+
+</div>
+</div>
+
+</body>
+</html>
