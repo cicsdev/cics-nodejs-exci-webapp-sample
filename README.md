@@ -50,10 +50,6 @@ __Note:__ Any string you pass into EDUCHAN will be truncated to 72 characters, w
 
 ## Installation
 
-### cics-exci node module installation
-
-You will need to install the [cics-exci](https://github.com/cicsdev/cics-nodejs-exci-module) node module before installing this sample. Follow the instructions in the README for the [https://github.com/cicsdev/cics-nodejs-exci-module](https://github.com/cicsdev/cics-nodejs-exci-module) GitHub repository to install.
-
 ### Cloning GitHub repository
 
 You will first have to clone this GitHub repository onto z/OS. When cloning the GitHub repo, you have two options. Firstly, if possible, use the Git client for z/OS available for download from the [Rocket Software Open Source Tools website](http://www.rocketsoftware.com/zos-open-source/tools).
@@ -68,12 +64,7 @@ To install this sample, from within the repository's root directory, run:
 $ npm install
 ```
 
-This will pull down all dependencies and install. Once the installation is done copy the cics-exci node module installed above, into the node_modules directory for this sample, for example:
-
-```bash
-$ mkdir node_modules/cics-exci/
-$ cp -R /u/user/GitHub/cics-nodejs-node-module/* node_modules/cics-exci/
-```
+This will pull down all dependencies and install.
 
 ## Configuration
 
