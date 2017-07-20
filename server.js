@@ -27,7 +27,7 @@ app.post('/cics/reverse', function (req, res) {
   var mycics = new cics();
 
   var original = req.body.string;
-  var channel = "MARKCHAN";
+  var channel = "MYCHANNEL";
   var applid = process.env.CICS_APPLID;
 
   // Function to call if we successfully connect to CICS
@@ -40,7 +40,7 @@ app.post('/cics/reverse', function (req, res) {
       if (err) {
         console.log("Error in PUT CONTAINER request, err.rc=", err.rc);
         res.sendStatus(500);
-        mycics.close();
+        mycics.dispose();
       } else {
         console.log("CICS PUT CONTAINER completed successfully!");
         programLink();
@@ -59,7 +59,7 @@ app.post('/cics/reverse', function (req, res) {
       if (err) {
         console.log("Error in LINK request, err.rc=", err.rc);
         res.sendStatus(500);
-        mycics.close();
+        mycics.dispose();
       } else {
         console.log("CICS LINK completed successfully!");
         getContainer();
@@ -76,7 +76,7 @@ app.post('/cics/reverse', function (req, res) {
       if (err) {
         console.log("Error in GET CONTAINER request, err.rc=", err.rc);
         res.sendStatus(500);
-        mycics.close();
+        mycics.dispose();
       } else {
         returnToClient(data);
       }
@@ -93,12 +93,12 @@ app.post('/cics/reverse', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(response));
 
-    mycics.close();
+    mycics.dispose();
   }
 
   // Connect to CICS and start request by putting data in Container
   if (applid) {
-    var conn = mycics.connect(function() {
+    var conn = mycics.create(function() {
       console.log("CICS process started successfully!");
       putContainer();
     });
