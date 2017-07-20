@@ -96,3 +96,6 @@ Once the server has started, from your workstation web browser go to: [http://my
 
 ## Tell us more
 This sample, along with the [sample cics-exci Node.js module](https://github.com/cicsdev/cics-nodejs-exci-node-module), give you a simple taste of Node.js on z/OS, interacting with CICS. We’re interested in your feedback on these and we’d also like to hear what other types of applications you want to build on z/OS. Please contact me at [markhollands@uk.ibm.com](mailto:markhollands@uk.ibm.com) to discuss further.
+
+## License
+This project is licensed under [Apache License Version 2.0](LICENSE).
