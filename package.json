@@ -12,6 +12,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "cics-exci": "latest",
     "express": "latest",
     "body-parser": "latest",
     "dotenv": "latest",
