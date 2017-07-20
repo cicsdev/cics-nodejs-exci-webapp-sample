@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/markjhollands/cics-nodejs-exci-webapp-sample.git"
+    "url": "https://github.com/cicsdev/cics-nodejs-exci-webapp-sample.git"
   },
   "main": "server.js",
   "scripts": {
