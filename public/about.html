@@ -9,7 +9,7 @@
 <!-- disclosure restricted by GSA ADP Schedule Contract with IBM Corp -->
 <html>
 <head>
-    <title>Hello Node.js with CICS</title>
+    <title>About the Node.js samples with CICS</title>
     <script src="angular/angular.min.js"></script>
     <script src="hello.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -40,35 +40,24 @@
 
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3 center">
-          <img src="img/cics.png" style="width:30em">
-          <h2>Node.js with CICS application</h2>
-          <p>This demo application is using IBM SDK for Node.js for z/OS. It uses the Angular.js, Express.js and cics-exci packages to create an end-to-end Node.js application. Want to see more? Find the code <a href="https://github.com/cicsdev/cics-nodejs-exci-webapp-sample">here</a></p>
-          <br><br>
+          <h2>About the Node.js samples with CICS</h2>
+          <p>As a quick demonstration of a Node.js application interacting with an existing z/OS assets – in this case, CICS programs – we’ve provided some new samples. These are provided as-is, as a way to explore the potential of Node.js and IBM Z.</p>
+          <p>The samples include a Node.js module that allows a Node.js application hosted in z/OS batch to interact with CICS over the External CICS Interface (EXCI). This node module can be used to invoke CICS programs over EXCI, passing data using CICS channels and containers. A developer or systems programmer can then write simple scripting programs using JavaScript, or more advanced Node.js applications which include invoking CICS programs.</p>
+          <p>We've also provide this sample application that uses the EXCI node module with some other popular node packages, such as Angular.js to provide the user interface.</p>
+          <hr>
+          <h2>Architecture</h2>
+          <img src="img/node-js-cics-architecture.png" style="width:30em">
+          <p>The architecture of this sample application demonstrates the power of Node.js in creating end-to-end Systems of Engagement applications. The sample uses Angular.js and jQuery to interact with Systems of Engagement business logic to create powerful, and reactive JavaScript user interfaces, able to dynamically update the user interface with data returned from the server, without reloading the entire web page.</p>
         </div>
-
-
-
-        <div class="col-lg-4 col-lg-offset-4 center">
-            <input type="text" ng-model="string.input"  class="form-control" placeholder="Text here" >
-            <br>
-            <button class="btn btn-md btn-primary"  ng-click="elliebutton();">Click to reverse</button>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-            <p>Original: {{string.input}}</p>
-            <p>Reversed: {{string.reversed}}</p>
-        </div>
-
-
     </div>
 
     <footer class="footer">
-        <hr>
-        <p class="text-muted center">
-        &copy; Copyright IBM Corp. 2017 All Rights Reserved
-        <br/>
-        This sample is licensed under <a href="license/LICENSE">Apache License Version 2.0</a>.
-        </p>
+      <hr>
+      <p class="text-muted center">
+      &copy; Copyright IBM Corp. 2017 All Rights Reserved
+      <br/>
+      This sample is licensed under <a href="license/LICENSE">Apache License Version 2.0</a>.
+      </p>
     </footer>
 
 </div>

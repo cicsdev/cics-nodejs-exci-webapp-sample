@@ -22,6 +22,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/angular', express.static(__dirname + '/node_modules/angular'));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/license', express.static(__dirname + '/'));
 
 app.post('/cics/reverse', function (req, res) {
   var mycics = new cics();
